@@ -1,0 +1,177 @@
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+h2,
+h3,
+h5,
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    position: relative;
+    color: #ffffff;
+    font-size: 8rem;
+    font-weight: 600;
+    line-height: 0.9;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+h3 {
+    color: black;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+h5 {
+    font-weight: 500;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+/* Title container */
+.top-container {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/coffee2.jpg');
+    background-size: cover;
+}
+
+.top-container::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.title-button {
+    position: relative;
+    padding-top: 50px;
+}
+
+/* Description container */
+.intro-container {
+    padding: 4rem;
+    padding-bottom: 3rem;
+    background-color: #FFFBE9;
+}
+
+.cafe-text {
+    padding-top: 55px;
+    text-align: right;
+}
+
+.cafe-img {
+    width: 200px;
+}
+
+.wifi-row {
+    margin-top: 3rem;
+}
+
+.wifi-img {
+    width: 320px;
+}
+
+.wifi-text {
+    padding-top: 60px;
+    text-align: left;
+}
+
+@media (max-width: 990px) {
+    .cafe-text {
+        text-align: center;
+        width: 60%;
+        padding-top: 0%;
+        padding-bottom: 30px;
+    }
+
+    .wifi-text {
+        position: relative;
+        bottom: 340px;
+        text-align: center;
+        width: 60%;
+        padding-top: 30px;
+    }
+
+    .wifi-img {
+        position: relative;
+        top: 190px;
+    }
+}
+
+/* Cards container */
+.cards-container {
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+}
+
+.card-title {
+    margin-bottom: 0;
+}
+
+.card-img {
+    width: 286px;
+    height: 230px;
+    object-fit: cover;
+}
+
+/* Carousel */
+.car-image {
+    width: 1000px;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* footer */
+footer {
+    background-color: #E3CAA5;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    padding-left: 15%;
+    padding-right: 20%;
+}
+
+.footer-title {
+    font-size: 0.75rem;
+    padding-bottom: 5px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0%;
+}
+
+.icon-link {
+    text-decoration: none;
+    color: black;
+    font-size: 0.6rem;
+}
+
+.copyright {
+    font-size: 0.75rem;
+    text-align: right;
+    padding-top: 80px;
+}
