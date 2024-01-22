@@ -10,4 +10,9 @@ def index(request):
     context = {'cafe_list': get_three_cafes()}
     return render(request, 'coffeeAndWifi/index.html', context)
 
+
+def cafes(request):
+    all_cafes = Cafe.objects.all()
+    context = {'all_cafes': all_cafes}
+    return render(request, 'coffeeAndWifi/cafes.html', context)
 # Create your views here.
